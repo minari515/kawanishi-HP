@@ -1,0 +1,129 @@
+body {
+    background-color: khaki;
+}
+h1 {
+    color: white;
+    background-color: sienna;
+}
+h2 {
+    color: white;
+    background-color: sienna;
+}
+th {
+    background-color: peru;
+}
+table {
+    background-color:white;
+}
+@media screen and (max-width:1000px){
+    li img {
+        float: none;
+    }
+    table {
+        margin-left: auto;
+    }
+}
+ol {
+  background: #fcfcfc;
+  padding: 0.5em 0.5em 0.5em 2em;
+  border: solid 3px gray;
+}
+div.sidemenu {
+    float:right;
+    margin:1ex;
+    padding:1ex;
+    width:26ex;
+}
+div.main {
+    margin-right: 30ex;
+}
+div.jumpmenu {
+    position: fixed;
+    top: 7ex;
+    width: 12em;
+}
+@media screen and (max-width:1000px) {
+    div.jumpmenu {
+        position: static;
+        width: auto;
+    }
+    div.main {
+        margin-left: auto;
+    }
+    div.jumpmenu ol {
+        margin: 0px;
+        padding: 0px;
+    }
+    div.jumpmenu li {
+        display: inline-block;
+        text-align: center;
+        padding: 1ex;
+        min-width: 4em;
+        max-width: 8em;
+    }
+}
+div.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: khaki;
+}
+
+div.contents {
+    margin-top: 20ex;
+}
+h2 a {
+    margin-top: -20ex;
+    padding-top: 20ex;
+}
+sidemenu img {
+    max-width: 200px;
+    max-height: 150;
+}
+div.hidden {
+    display: none;
+}
+div.show {
+    animation: slideIn 1s ease 0s 1 normal;
+}
+
+@keyframes slideIn {
+    0% {margin-top: 200px; opacity: 0}
+    100% {margin-top: 0pe; opacity: 1}
+}
+
+@media screen and (max-width: 1600px) {
+    div.sidemenu {
+        display: none;
+    }
+}
+#mode {
+    display: none;
+}
+#toggle {
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+    font-size: 30px;
+    color: gray;
+    width: 1em;
+    height: 1em;
+    padding: .5em;
+    background-color: white;
+    opacity: .7;
+    text-align:center;
+    display: none;
+}
+@media screen and (max-height:500px){
+    #headmenu {
+        display: none;
+    }
+    #headmenu.open {
+        display: block;
+    }
+    #toggle {
+        display: block;
+    }
+}
